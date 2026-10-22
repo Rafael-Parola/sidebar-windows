@@ -1,0 +1,45 @@
+{
+    "version": "1.0.0",
+    "position": "right",
+    "auto_hide": true,
+    "height_mode": "auto",
+    "custom_height": 480,
+    "extra_height_padding": 30,
+    "run_at_windows_startup": false,
+    "launch_auto_apps_on_start": true,
+    "stagger_delay_seconds": 2,
+    "apps": [
+        {
+            "id": "app_explorer",
+            "name": "Explorador de Arquivos",
+            "path": "explorer.exe",
+            "arguments": "",
+            "auto_start": false,
+            "category": "Sistema"
+        },
+        {
+            "id": "app_notepad",
+            "name": "Bloco de Notas",
+            "path": "C:\\Windows\\notepad.exe",
+            "arguments": "",
+            "auto_start": false,
+            "category": "Produtividade"
+        },
+        {
+            "id": "app_calc",
+            "name": "Calculadora",
+            "path": "calc.exe",
+            "arguments": "",
+            "auto_start": false,
+            "category": "Utilidades"
+        },
+        {
+            "id": "app_taskmgr",
+            "name": "Gerenciador de Tarefas",
+            "path": "C:\\Windows\\System32\\Taskmgr.exe",
+            "arguments": "",
+            "auto_start": false,
+            "category": "Sistema"
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / PyInstaller / Inno Setup builds & executables
+build/
+dist/
+dist_installer/
+*.exe
+*.manifest
+*.pkg
+# Note: sydebar.spec is tracked intentionally so anyone can build the executable!
+
+# App specific: local user data, cache and personal custom icons
+# (Default apps and template configuration are kept in config.example.json)
+.cache/
+config.json
+assets/custom_icons/*
+!assets/custom_icons/.gitkeep
+
+# Environments & virtualenvs
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Unit test / coverage reports
+.tox/
+.nox/
+.coverage
+.coverage.*
+.pytest_cache/
+htmlcov/
+
+# IDEs and Code Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.cursorignore
+.cursorindexingignore
+
+# Windows OS temporary and thumbnail files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Installer & build logs
+*.log
+pip-log.txt
+pip-delete-this-directory.txt
