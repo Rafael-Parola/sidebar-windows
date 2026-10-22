@@ -6,12 +6,10 @@ from PyInstaller.utils.hooks import collect_all
 block_cipher = None
 
 datas = [
-    ('assets', 'assets'),
+    ('assets/icon.ico', 'assets'),
+    ('assets/logo.png', 'assets'),
+    ('config.example.json', '.'),
 ]
-if os.path.exists('config.json'):
-    datas.append(('config.json', '.'))
-elif os.path.exists('config.example.json'):
-    datas.append(('config.example.json', 'config.json'))
 binaries = []
 hiddenimports = [
     'pystray._win32',

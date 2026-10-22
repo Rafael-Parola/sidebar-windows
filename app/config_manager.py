@@ -70,25 +70,21 @@ class ConfigManager:
         os.makedirs(self.cache_dir, exist_ok=True)
         os.makedirs(self.custom_icons_dir, exist_ok=True)
 
-        # Seed initial config and default custom icons if first run in frozen mode
+        # Seed initial config if first run in frozen mode
         if not os.path.exists(self.file_path):
-            bundled_config = get_resource_path("config.json")
-            if os.path.exists(bundled_config):
+            bundled_example = get_resource_path("config.example.json")
+            if os.path.exists(bundled_example):
                 try:
-                    shutil.copy2(bundled_config, self.file_path)
+                    shutil.copy2(bundled_example, self.file_path)
                 except Exception:
                     pass
-
-        bundled_custom_icons = get_resource_path(os.path.join("assets", "custom_icons"))
-        if os.path.exists(bundled_custom_icons):
-            try:
-                for icon_name in os.listdir(bundled_custom_icons):
-                    src = os.path.join(bundled_custom_icons, icon_name)
-                    dest = os.path.join(self.custom_icons_dir, icon_name)
-                    if os.path.isfile(src) and not os.path.exists(dest):
-                        shutil.copy2(src, dest)
-            except Exception:
-                pass
+            else:
+                bundled_config = get_resource_path("config.json")
+                if os.path.exists(bundled_config) and not os.path.isdir(bundled_config):
+                    try:
+                        shutil.copy2(bundled_config, self.file_path)
+                    except Exception:
+                        pass
 
         self.data = self._load()
 
