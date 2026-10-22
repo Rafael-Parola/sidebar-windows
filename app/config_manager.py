@@ -13,7 +13,7 @@ CACHE_DIR = os.path.join(USER_DATA_ROOT, ".cache", "icons")
 CUSTOM_ICONS_DIR = os.path.join(USER_DATA_ROOT, "assets", "custom_icons")
 
 RUN_REG_KEY = r"Software\Microsoft\Windows\CurrentVersion\Run"
-REG_APP_NAME = "SydeBarWindows"
+REG_APP_NAME = "SidebarWindows"
 
 DEFAULT_CONFIG = {
     "version": "1.0.0",
@@ -263,12 +263,12 @@ class ConfigManager:
             return False
 
     def set_run_at_startup(self, enable: bool):
-        """Adds or removes SydeBar from Windows CurrentVersion\\Run registry."""
+        """Adds or removes Sidebar from Windows CurrentVersion\\Run registry."""
         if getattr(sys, "frozen", False):
             cmd = f'"{sys.executable}"'
         else:
             project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-            vbs_launcher = os.path.join(project_root, "SydeBar.vbs")
+            vbs_launcher = os.path.join(project_root, "Sidebar.vbs")
             main_py = os.path.join(project_root, "main.py")
 
             # Command to run silently without command prompt

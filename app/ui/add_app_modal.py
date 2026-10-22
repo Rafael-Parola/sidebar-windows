@@ -192,7 +192,7 @@ class AddAppModal(ctk.CTkToplevel):
         # 6. Switch: Auto-Start
         self.auto_switch = ctk.CTkSwitch(
             form_frame,
-            text="⚡ Iniciar este app automaticamente com o SydeBar",
+            text="⚡ Iniciar este app automaticamente com o Sidebar",
             font=ctk.CTkFont(size=12, weight="bold"),
             progress_color="#10b981",
             text_color="#e2e8f0"

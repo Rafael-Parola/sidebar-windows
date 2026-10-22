@@ -36,12 +36,18 @@ def get_resource_path(relative_path: str) -> str:
 def get_user_data_dir() -> str:
     """
     Returns writable directory for user settings, cache, and custom icons.
-    In frozen/installed mode: %APPDATA%\\SydeBar.
+    In frozen/installed mode: %APPDATA%\\Sidebar.
     In development mode: project root.
     """
     if getattr(sys, "frozen", False):
         appdata = os.environ.get("APPDATA") or os.path.expanduser("~")
-        data_dir = os.path.join(appdata, "SydeBar")
+        data_dir = os.path.join(appdata, "Sidebar")
+        old_data_dir = os.path.join(appdata, "SydeBar")
+        if os.path.exists(old_data_dir) and not os.path.exists(data_dir):
+            try:
+                os.rename(old_data_dir, data_dir)
+            except Exception:
+                pass
         os.makedirs(data_dir, exist_ok=True)
         return data_dir
     return get_bundle_dir()

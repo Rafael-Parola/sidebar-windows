@@ -13,7 +13,7 @@ dist_installer/
 *.exe
 *.manifest
 *.pkg
-# Note: sydebar.spec is tracked intentionally so anyone can build the executable!
+# Note: sidebar.spec is tracked intentionally so anyone can build the executable!
 
 # App specific: local user data, cache and personal custom icons
 # (Default apps and template configuration are kept in config.example.json)

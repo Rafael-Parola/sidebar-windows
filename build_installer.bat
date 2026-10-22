@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 echo ========================================================
-echo        SydeBar Windows - Gerador de Instalador
+echo        Sidebar Windows - Gerador de Instalador
 echo ========================================================
 echo.
 
@@ -22,8 +22,8 @@ if %ERRORLEVEL% neq 0 (
 )
 
 :: 3. Compilar executavel com PyInstaller
-echo [2/3] Compilando executavel SydeBar com PyInstaller...
-python -m PyInstaller sydebar.spec --noconfirm
+echo [2/3] Compilando executavel Sidebar com PyInstaller...
+python -m PyInstaller sidebar.spec --noconfirm
 if %ERRORLEVEL% neq 0 (
     echo [ERRO] Falha ao compilar com PyInstaller.
     pause
@@ -61,7 +61,7 @@ if %ERRORLEVEL% neq 0 (
 echo.
 echo ========================================================
 echo   [SUCESSO] Instalador gerado com sucesso!
-echo   Arquivo: dist_installer\SydeBar_Setup_v1.0.0.exe
+echo   Arquivo: dist_installer\Sidebar_Setup_v1.0.0.exe
 echo ========================================================
 echo.
 pause

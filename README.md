@@ -1,4 +1,4 @@
-# ✦ SydeBar Windows (Dock Vertical)
+# ✦ Sidebar Windows (Dock Vertical)
 
 Uma barra lateral ultra-compacta em formato de **Dock Vertical** para Windows, com design minimalista baseado **apenas em ícones**, **auto-ocultamento automático (Auto-Hide na borda da tela)**, tooltips informativos e **gerenciamento de início automático**.
 
@@ -22,9 +22,9 @@ Uma barra lateral ultra-compacta em formato de **Dock Vertical** para Windows, c
    - Na engrenagem **`⚙`**, você pode ativar o **Início com o Windows**, fazendo com que a barra e seus aplicativos abram sozinhos ao ligar o PC.
 
 4. **Ícones Customizáveis (Opcional & Seguro)**:
-   - Por padrão, o SydeBar extrai o ícone nativo real do executável/atalho.
+   - Por padrão, o Sidebar extrai o ícone nativo real do executável/atalho.
    - Ao adicionar ou editar um app, você pode clicar em **`🖼 Escolher...`** (ou no quadradinho do ícone) e selecionar qualquer imagem (`.ico`, `.png`, `.jpg`, `.webp`).
-   - **Cópia Local Automática**: A imagem é automaticamente copiada e convertida para a pasta interna `assets/custom_icons/` do SydeBar, garantindo que scripts externos de organização ou limpeza de arquivos nunca quebrem ou percam o ícone!
+   - **Cópia Local Automática**: A imagem é automaticamente copiada e convertida para a pasta interna `assets/custom_icons/` do Sidebar, garantindo que scripts externos de organização ou limpeza de arquivos nunca quebrem ou percam o ícone!
    - Um botão **`✕`** permite voltar para o ícone padrão automático a qualquer momento.
 
 ---
@@ -34,7 +34,7 @@ Uma barra lateral ultra-compacta em formato de **Dock Vertical** para Windows, c
 ### 1. Modo Silencioso (Recomendado para o dia a dia):
 Dê um duplo clique no arquivo:
 ```
-SydeBar.vbs
+Sidebar.vbs
 ```
 *(Executa em segundo plano com `pythonw.exe`, sem abrir nenhuma janela de prompt de comando).*
 
@@ -53,9 +53,9 @@ Para gerar um instalador profissional `.exe` (que permite instalar em qualquer c
 1. Dê um duplo clique no arquivo **`build_installer.bat`**.
 2. O instalador será gerado na pasta:
    ```
-   dist_installer\SydeBar_Setup_v1.0.0.exe
+   dist_installer\Sidebar_Setup_v1.0.0.exe
    ```
-3. O instalador configura atalhos na Área de Trabalho, Menu Iniciar, inicialização automática com o Windows e desinstalador no Painel de Controle. As configurações e ícones customizados ficam salvos de forma segura em `%APPDATA%\SydeBar`.
+3. O instalador configura atalhos na Área de Trabalho, Menu Iniciar, inicialização automática com o Windows e desinstalador no Painel de Controle. As configurações e ícones customizados ficam salvos de forma segura em `%APPDATA%\Sidebar`.
 
 ---
 

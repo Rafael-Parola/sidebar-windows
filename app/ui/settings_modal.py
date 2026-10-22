@@ -8,7 +8,7 @@ class SettingsModal(ctk.CTkToplevel):
         self.config_manager = config_manager
         self.on_settings_changed = on_settings_changed
 
-        self.title("Configurações do SydeBar")
+        self.title("Configurações do Sidebar")
         self.geometry("480x560")
         self.resizable(False, False)
         self.configure(fg_color="#12151d")
@@ -144,7 +144,7 @@ class SettingsModal(ctk.CTkToplevel):
         is_startup_active = self.config_manager.is_run_at_startup_enabled()
         self.startup_switch = ctk.CTkSwitch(
             container,
-            text="Iniciar o SydeBar ao ligar o computador (Windows Startup)",
+            text="Iniciar o Sidebar ao ligar o computador (Windows Startup)",
             font=ctk.CTkFont(size=12),
             progress_color="#10b981",
             text_color="#e2e8f0"
@@ -158,7 +158,7 @@ class SettingsModal(ctk.CTkToplevel):
         # Launch auto apps on sidebar start
         self.auto_launch_switch = ctk.CTkSwitch(
             container,
-            text="Disparar apps marcados automaticamente ao abrir o SydeBar",
+            text="Disparar apps marcados automaticamente ao abrir o Sidebar",
             font=ctk.CTkFont(size=12),
             progress_color="#10b981",
             text_color="#e2e8f0"

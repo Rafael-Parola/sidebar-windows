@@ -7,7 +7,7 @@ from app.paths import get_resource_path
 
 def setup_tray_icon(sidebar_window, config_manager, on_quit=None):
     """
-    Sets up a background system tray icon for SydeBar.
+    Sets up a background system tray icon for Sidebar.
     """
     icon_path = get_resource_path(os.path.join("assets", "icon.ico"))
 
@@ -41,7 +41,7 @@ def setup_tray_icon(sidebar_window, config_manager, on_quit=None):
         pystray.MenuItem("Sair", on_exit_clicked)
     )
 
-    icon = pystray.Icon("SydeBar", tray_image, "SydeBar Windows", menu)
+    icon = pystray.Icon("Sidebar", tray_image, "Sidebar Windows", menu)
 
     # Run in background daemon thread
     t = threading.Thread(target=icon.run, daemon=True)

@@ -1,1 +1,1 @@
-# UI modules for SydeBar
+# UI modules for Sidebar

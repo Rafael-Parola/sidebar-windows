@@ -1,4 +1,4 @@
-' Launcher silencioso para o SydeBar (sem janela preta de terminal)
+' Launcher silencioso para o Sidebar (sem janela preta de terminal)
 Set WshShell = CreateObject("WScript.Shell")
 Set FSO = CreateObject("Scripting.FileSystemObject")
 currentDir = FSO.GetParentFolderName(WScript.ScriptFullName)

@@ -1,8 +1,8 @@
-; Script Inno Setup para compilao do Instalador do SydeBar
-#define MyAppName "SydeBar"
+; Script Inno Setup para compilacao do Instalador do Sidebar
+#define MyAppName "Sidebar"
 #define MyAppVersion "1.0.0"
-#define MyAppPublisher "SydeBar"
-#define MyAppExeName "SydeBar.exe"
+#define MyAppPublisher "Sidebar"
+#define MyAppExeName "Sidebar.exe"
 
 [Setup]
 AppId={{E68A8D2A-23A4-4A2D-A2A9-3A65C8C96729}
@@ -15,7 +15,7 @@ DisableProgramGroupPage=yes
 PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
 OutputDir=dist_installer
-OutputBaseFilename=SydeBar_Setup_v{#MyAppVersion}
+OutputBaseFilename=Sidebar_Setup_v{#MyAppVersion}
 SetupIconFile=assets\icon.ico
 Compression=lzma2/ultra64
 SolidCompression=yes
@@ -30,10 +30,10 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
-Name: "startupicon"; Description: "Iniciar o SydeBar automaticamente ao ligar o computador"; GroupDescription: "Opes adicionais:"
+Name: "startupicon"; Description: "Iniciar o Sidebar automaticamente ao ligar o computador"; GroupDescription: "Opções adicionais:"
 
 [Files]
-Source: "dist\SydeBar\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "dist\Sidebar\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "assets\icon.ico"; DestDir: "{app}\assets"; Flags: ignoreversion
 
 [Icons]
